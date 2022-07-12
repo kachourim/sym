@@ -13,7 +13,7 @@ Python packages: tkinter, numpy, sympy, scipy, matplotlib
 
 Consider the following metasurface unit cell composed of a flat T-shape structure 
 
-<img src="/images/T-structure.png" width="500">
+<img src="/images/T-struct.png" width="250">
 
 
 ## References
