@@ -10,7 +10,8 @@ Python packages: tkinter, numpy, sympy, scipy, matplotlib
 
 Based on [1,2], the provided script computes the scattering matrix for oblique wave propagation and the material parameter tensors (dipolar and quadrupolar responses) that correspond to the spatial symmetries of a metasurface made of a periodic square lattice.
 
-### List of implemented symmetries
+The script works by specifying the list of symmetries that the metasurface unit cell possesses, those that are available are defined below
+
 ```
 1. px: symmetry along the x-axis
 2. py: symmetry along the y-axis
@@ -21,6 +22,10 @@ Based on [1,2], the provided script computes the scattering matrix for oblique w
 7. c2z: 180° rotation symmetry around the z-axis
 8. c4z: 90° rotation symmetry around the z-axis
 ```
+
+The script then computes the components of the material parameter tensors that are allowed to exist due to the spatial symmetries of the system. These components are relating the electric dipole ($p$), the magnetic dipole ($m$), the electric quadrupole ($Q$) and the magnetic quadrupole ($S$) to the electric field ($E$), the magnetic field ($H$), the gradient of the electric field ($\diamond E$) and the gradient of the magnetic field ($\diamond H$) such that [3]
+
+<img src="/images/PMQS.png" width="500">
 
 ### Example
 
@@ -55,3 +60,5 @@ For the same metasurface, the scattering matrix is, for $\phi = 90^\circ$, given
 [1] Bernal Arango, Felipe, Toon Coenen, and A. Femius Koenderink. "Underpinning hybridization intuition for complex nanoantennas by magnetoelectric quadrupolar polarizability retrieval." ACS Photonics 1.5 (2014): 444-453.
 
 [2] Dmitriev, Victor. "Symmetry properties of electromagnetic planar arrays in transfer matrix description." IEEE transactions on antennas and propagation 61.1 (2012): 185-194.
+
+[3] Achouri, Karim, and Olivier JF Martin. "Extension of Lorentz reciprocity and Poynting theorems for spatially dispersive media with quadrupolar responses." Physical Review B 104.16 (2021): 165426.
