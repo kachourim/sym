@@ -8,7 +8,7 @@ Python packages: tkinter, numpy, sympy, scipy, matplotlib
 
 ## Description
 
-Based on [1,2], the provided script computes the scattering matrix for oblique wave propagation and the material parameter tensors (dipolar and quadrupolar responses) that correspond to the spatial symmetries of a metasurface made of a periodic square lattice.
+Based on [1,2], the provided script computes the scattering matrix for oblique wave propagation and the material parameter tensors (dipolar and quadrupolar responses) that correspond to the spatial symmetries of a metasurface made of a subwavelength periodic square lattice.
 
 The script works by specifying the list of symmetries that the metasurface unit cell possesses, those that are available are defined below
 
@@ -31,7 +31,7 @@ where
 
 $\diamond E = \[(\partial_x E_y+\partial_y E_x)/2,(\partial_x E_z+\partial_z E_x)/2 (\partial_y E_z+\partial_z E_y)/2, \partial_xE_x, \partial_yE_y, \partial_zE_z  \]$
 
-Using reciprocity [3] and considering that the quadrupolar tensors are irreducible, we obtain a material parameter matrix similar to those shown in [1].
+Using reciprocity [3] and considering that the quadrupolar tensors are irreducible, we obtain a material parameter matrices similar to those shown in [1].
 
 The scattering matrix is obtained following the procudure described in [2]. It connects the input ports (1, 2, 3, 4) to the output ports (1, 2, 3, 4), where even numbers correspond to TE polarization whereas odd numbers correspond to TM polarization, as such
 
