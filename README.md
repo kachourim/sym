@@ -60,7 +60,7 @@ The scattering matrix [2] can be obtained by pressing Enter in the second box. B
 
 <img src="/images/Smatrix.png" width="400">
 
-For the same metasurface, the scattering matrix is, for $\phi = 90^\circ$, given by 
+For the same metasurface, the scattering matrix is, for $\phi = 90^\circ$ (yz-plane), given by 
 
 <img src="/images/Smatrix2.png" width="400">
 
