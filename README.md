@@ -33,7 +33,10 @@ $\diamond E = \[(\partial_x E_y+\partial_y E_x)/2,(\partial_x E_z+\partial_z E_x
 
 Using reciprocity [3] and considering that the quadrupolar tensors are irreducible, we obtain a material parameter matrix similar to those shown in [1].
 
-The scattering matrix is obtained following the procudure described in [2].
+The scattering matrix is obtained following the procudure described in [2]. It connects the input ports (1, 2, 3, 4) to the output ports (1, 2, 3, 4), where even numbers correspond to TE polarization whereas odd numbers correspond to TM polarization, as such
+
+<img src="/images/S-description.png" width="800">
+
 
 ### Example
 
