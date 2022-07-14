@@ -25,7 +25,15 @@ The script works by specifying the list of symmetries that the metasurface unit 
 
 The script then computes the components of the material parameter tensors that are allowed to exist due to the spatial symmetries of the system. These components are relating the electric dipole ($p$), the magnetic dipole ($m$), the electric quadrupole ($Q$) and the magnetic quadrupole ($S$) to the electric field ($E$), the magnetic field ($H$), the gradient of the electric field ($\diamond E$) and the gradient of the magnetic field ($\diamond H$) such that [3]
 
-<img src="/images/PMQS.png" width="500">
+<img src="/images/PMQS.png" width="400">
+
+where 
+
+$\diamond E = \[(\partial_x E_y+\partial_y E_x)/2,(\partial_x E_z+\partial_z E_x)/2 (\partial_y E_z+\partial_z E_y)/2, \partial_xE_x, \partial_yE_y, \partial_zE_z  \]$
+
+Using reciprocity [3] and considering that the quadrupolar tensors are irreducible, we obtain a material parameter matrix similar to those shown in [1].
+
+The scattering matrix is obtained following the procudure described in [2].
 
 ### Example
 
@@ -33,7 +41,7 @@ Consider the following reciprocal metasurface unit cell composed of a flat T-sha
 
 <img src="/images/T-struct.png" width="250">
 
-The structure is aligned with the metasurface lattice and its symmetries (Px, Pz, C2y) are emphasized (descriptions given in the next section).
+The structure is aligned with the metasurface lattice and its symmetries (Px, Pz, C2y) are emphasized.
 
 To use the provided script, enter the symmetries of the structure in the first box, as follows
 
@@ -45,7 +53,7 @@ Then, with your cursor placed in the first box, press Enter to obtain the symmet
 
 Note that the numbers and colors are arbitrary and are only useful to see which of the components are equal to each other.
 
-The scattering matrix can be obtained by pressing Enter in the second box. By default, the plane of incidence is defined for $\phi = 0$ (xz-plane)
+The scattering matrix [2] can be obtained by pressing Enter in the second box. By default, the plane of incidence is defined for $\phi = 0$ (xz-plane)
 
 <img src="/images/Smatrix.png" width="400">
 
