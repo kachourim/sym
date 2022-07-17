@@ -2,7 +2,7 @@
 
 ## Requirements
 
-Python >= 3.9
+Python >= 3.7
 
 Python packages: tkinter, numpy, sympy, scipy, matplotlib
 
