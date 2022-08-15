@@ -457,6 +457,9 @@ def FindTNI(L):
     It = np.array([[1, 0],[0, 1]])
     
     POI = np.array([0, 1, 0]) # original orientation of the plane of incidence (xz-plane)
+
+    # at normal incidence, phi = 0
+    phi = 0
   
     # Find invariant scattering sp.Matrix that corresponds to symmetries
     for q in L:
@@ -465,7 +468,6 @@ def FindTNI(L):
             q = 'iv'
         
         if q == 'c4z':
-            q = 'c2z'
             if 'px' in L and 'py' in L:
                 L.append("pxy")
                 L.append("pxy2")
