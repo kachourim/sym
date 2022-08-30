@@ -8,9 +8,11 @@ Python packages: tkinter, numpy, sympy, scipy, matplotlib
 
 ## Description
 
-Based on [1,2], the provided script computes the scattering matrix for oblique wave propagation and the material parameter tensors (dipolar and quadrupolar responses) that correspond to the spatial symmetries of a metasurface made of a subwavelength periodic square lattice.
+A detailed explanation behind this work is available in the arXiv paper: https://arxiv.org/abs/2208.12504, which is based on [1,2]. 
 
-The script works by specifying the list of symmetries that the metasurface unit cell possesses, those that are available are defined below
+The provided script computes the scattering matrix for oblique and normal wave propagation as well as the material parameter tensors (dipolar and quadrupolar responses) that correspond to the spatial symmetries of a metasurface made of a subwavelength periodic square lattice.
+
+The script works by specifying the list of symmetries that the metasurface unit cell possesses. Those that are available in the script are defined below
 
 ```
 1. px: symmetry along the x-axis
@@ -21,6 +23,15 @@ The script works by specifying the list of symmetries that the metasurface unit 
 6. c2y: 180° rotation symmetry around the y-axis
 7. c2z: 180° rotation symmetry around the z-axis
 8. c4z: 90° rotation symmetry around the z-axis
+9. pxy: symmetry through the +45° diagonal between the x- and y-axes
+10. pxy2: symmetry through the -45° diagonal between the x- and y-axes
+11. pxz: symmetry through the +45° diagonal between the x- and z-axes
+12. pxz2: symmetry through the -45° diagonal between the x- and z-axes
+13. pyz: symmetry through the +45° diagonal between the y- and z-axes
+14. pyz2: symmetry through the -45° diagonal between the y- and z-axes
+15. c2xy: 180° rotation symmetry around the +45° diagonal between the x- and y-axes
+16. c2xz: 180° rotation symmetry around the +45° diagonal between the x- and z-axes
+17. c2yz: 180° rotation symmetry around the +45° diagonal between the y- and z-axes
 ```
 
 The script then computes the components of the material parameter tensors that are allowed to exist due to the spatial symmetries of the system. These components are relating the electric dipole ($p$), the magnetic dipole ($m$), the electric quadrupole ($Q$) and the magnetic quadrupole ($S$) to the electric field ($E$), the magnetic field ($H$), the gradient of the electric field ($\diamond E$) and the gradient of the magnetic field ($\diamond H$) such that [3]
