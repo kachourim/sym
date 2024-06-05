@@ -22,16 +22,18 @@ The script works by specifying the list of symmetries that the metasurface unit 
 5. c2x: 180° rotation symmetry around the x-axis
 6. c2y: 180° rotation symmetry around the y-axis
 7. c2z: 180° rotation symmetry around the z-axis
-8. c4z: 90° rotation symmetry around the z-axis
-9. pxy: symmetry through the +45° diagonal between the x- and y-axes
-10. pxy2: symmetry through the -45° diagonal between the x- and y-axes
-11. pxz: symmetry through the +45° diagonal between the x- and z-axes
-12. pxz2: symmetry through the -45° diagonal between the x- and z-axes
-13. pyz: symmetry through the +45° diagonal between the y- and z-axes
-14. pyz2: symmetry through the -45° diagonal between the y- and z-axes
-15. c2xy: 180° rotation symmetry around the +45° diagonal between the x- and y-axes
-16. c2xz: 180° rotation symmetry around the +45° diagonal between the x- and z-axes
-17. c2yz: 180° rotation symmetry around the +45° diagonal between the y- and z-axes
+8. c4x: 90° rotation symmetry around the x-axis
+9. c4y: 90° rotation symmetry around the y-axis
+10. c4z: 90° rotation symmetry around the z-axis
+11. pxy: symmetry through the +45° diagonal between the x- and y-axes
+12. pxy2: symmetry through the -45° diagonal between the x- and y-axes
+13. pxz: symmetry through the +45° diagonal between the x- and z-axes
+14. pxz2: symmetry through the -45° diagonal between the x- and z-axes
+15. pyz: symmetry through the +45° diagonal between the y- and z-axes
+16. pyz2: symmetry through the -45° diagonal between the y- and z-axes
+17. c2xy: 180° rotation symmetry around the +45° diagonal between the x- and y-axes
+18. c2xz: 180° rotation symmetry around the +45° diagonal between the x- and z-axes
+19. c2yz: 180° rotation symmetry around the +45° diagonal between the y- and z-axes
 ```
 
 The script then computes the components of the material parameter tensors that are allowed to exist due to the spatial symmetries of the system. These components are relating the electric dipole ($p$), the magnetic dipole ($m$), the electric quadrupole ($Q$) and the magnetic quadrupole ($S$) to the electric field ($E$), the magnetic field ($H$), the gradient of the electric field ($\diamond E$) and the gradient of the magnetic field ($\diamond H$) such that [3]
